@@ -1,0 +1,40 @@
+import type { Product } from "../types";
+
+export const fallbackProducts: Product[] = [
+  {
+    id: "aqualoop-bottle",
+    name: "AquaLoop Bottle",
+    category: "Reusable Bottle",
+    description: "Insulated stainless steel bottle built for daily hydration, commutes, and gym sessions.",
+    price: 1499,
+    currency: "INR",
+    image_url: "https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=900&q=80",
+    audience: "students and young professionals",
+    key_benefits: ["24-hour cold retention", "leak-proof cap", "eco-friendly steel body"],
+    brand_tone: "eco"
+  },
+  {
+    id: "luma-desk-lamp",
+    name: "Luma Desk Lamp",
+    category: "Home Office",
+    description: "Minimal LED desk lamp with adjustable brightness for focused work and late-night study.",
+    price: 2299,
+    currency: "INR",
+    image_url: "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=900&q=80",
+    audience: "remote workers and design-conscious students",
+    key_benefits: ["eye-friendly light", "touch controls", "compact modern design"],
+    brand_tone: "minimal"
+  },
+  {
+    id: "pulsefit-band",
+    name: "PulseFit Band",
+    category: "Fitness Wearable",
+    description: "Lightweight fitness band that tracks workouts, sleep, and heart-rate trends.",
+    price: 3499,
+    currency: "INR",
+    image_url: "https://images.unsplash.com/photo-1576243345690-4e4b79b63288?auto=format&fit=crop&w=900&q=80",
+    audience: "first-time fitness users and active professionals",
+    key_benefits: ["7-day battery", "sleep insights", "water-resistant workout tracking"],
+    brand_tone: "tech"
+  }
+];
