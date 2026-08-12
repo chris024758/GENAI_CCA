@@ -126,9 +126,13 @@ input {
 .workspace {
   display: grid;
   gap: 18px;
-  grid-template-columns: minmax(260px, 330px) minmax(420px, 1fr) minmax(300px, 390px);
+  grid-template-columns: minmax(260px, 330px) minmax(0, 1fr) minmax(300px, 390px);
   margin: 0 auto;
   max-width: 1500px;
+}
+
+.workspace > * {
+  min-width: 0;
 }
 
 .inventory-panel,
@@ -137,6 +141,8 @@ input {
   background: #fffdf8;
   border: 1px solid #ded7c9;
   border-radius: 8px;
+  min-width: 0;
+  overflow: hidden;
 }
 
 .inventory-panel,
@@ -331,6 +337,12 @@ input {
   font-size: 13px;
   gap: 8px;
   line-height: 1.45;
+  max-width: 100%;
+}
+
+.log-row span:last-child {
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .log-dot {
@@ -353,10 +365,13 @@ input {
   color: #d5f5e8;
   font-size: 11px;
   line-height: 1.45;
-  max-height: 150px;
+  max-height: 220px;
+  max-width: 100%;
   overflow: auto;
+  overflow-wrap: anywhere;
   padding: 10px;
   white-space: pre-wrap;
+  word-break: break-word;
 }
 
 .empty-output {
@@ -415,6 +430,8 @@ input {
   color: #43514b;
   font-size: 13px;
   line-height: 1.48;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .selected-summary {
